@@ -7,6 +7,10 @@
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 767px) {
+
+    .fondo div img{
+        width: 100%;
+    }
     .productos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -64,6 +68,11 @@
 
 /* Estilos para tabletas */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .fondo div img{
+        width: 100%;
+    }
+    
     .productos{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -122,6 +131,12 @@
 /* Estilos para computadoras */
 @media screen and (min-width: 1024px) {
 
+    
+
+    .fondo div img{
+        width: 100%;
+    }
+
     .productos{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -179,5 +194,4 @@
 
   
 
-    
-}
+
