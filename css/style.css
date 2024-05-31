@@ -1,0 +1,183 @@
+*{
+    /*Reset*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+
+
+    }
+    .producto {
+        background: rgb(212, 211, 211);
+        text-align: center;
+        padding: 5%;
+        border-radius: 1%;
+        
+        
+        
+    }
+
+    .index {
+        padding: 5%;
+    }
+    .producto a img{
+        width: 90%;
+        border-radius: 5px;
+        
+
+        background: aqua;
+    }
+
+    .carro a img {
+        
+        width: 4%;
+        justify-content: space-around;
+        margin: 1%;
+    }
+
+    .precio{
+        
+            font-size: 16px; /* Tamaño de fuente */
+            font-weight: bold; /* Negrita */
+            color: #333; /* Color del texto */
+            padding: 5px 10px; /* Espaciado interno */
+            border: 2px solid #ccc; /* Borde sólido de 2px de grosor y color gris claro */
+            border-radius: 5px; /* Bordes redondeados */
+            display: inline-block; /* Para que el borde se ajuste al contenido */
+            background-color: #ff9900;
+          }
+          
+          /* Estilo adicional para resaltar el precio */
+          .precio-producto.destacado {
+            background-color: #f8f8f8; /* Fondo gris claro */
+            color: #ff9900; /* Color de texto naranja para destacar */
+          }
+    }
+
+/* Estilos para tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+
+
+
+    }
+    .producto {
+        background: rgb(212, 211, 211);
+        text-align: center;
+        padding: 5%;
+        border-radius: 1%;
+        
+        
+        
+    }
+
+    .index {
+        padding: 5%;
+    }
+    .producto a img{
+        width: 90%;
+        border-radius: 5px;
+        
+
+        background: aqua;
+    }
+
+    .carro a img {
+        
+        width: 4%;
+        justify-content: space-around;
+        margin: 1%;
+    }
+
+    .precio{
+        
+            font-size: 16px; /* Tamaño de fuente */
+            font-weight: bold; /* Negrita */
+            color: #333; /* Color del texto */
+            padding: 5px 10px; /* Espaciado interno */
+            border: 2px solid #ccc; /* Borde sólido de 2px de grosor y color gris claro */
+            border-radius: 5px; /* Bordes redondeados */
+            display: inline-block; /* Para que el borde se ajuste al contenido */
+            background-color: #ff9900;
+          }
+          
+          /* Estilo adicional para resaltar el precio */
+          .precio-producto.destacado {
+            background-color: #f8f8f8; /* Fondo gris claro */
+            color: #ff9900; /* Color de texto naranja para destacar */
+          }
+    }
+
+/* Estilos para computadoras */
+@media screen and (min-width: 1024px) {
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+
+
+
+    }
+    .producto {
+        background: rgb(212, 211, 211);
+        text-align: center;
+        padding: 5%;
+        border-radius: 1%;
+        
+        
+        
+    }
+
+    .index {
+        padding: 5%;
+    }
+    .producto a img{
+        width: 90%;
+        border-radius: 5px;
+        
+
+        background: aqua;
+    }
+
+    .carro a img {
+        
+        width: 4%;
+        justify-content: space-around;
+        margin: 1%;
+    }
+
+    .precio{
+        
+            font-size: 16px; /* Tamaño de fuente */
+            font-weight: bold; /* Negrita */
+            color: #333; /* Color del texto */
+            padding: 5px 10px; /* Espaciado interno */
+            border: 2px solid #ccc; /* Borde sólido de 2px de grosor y color gris claro */
+            border-radius: 5px; /* Bordes redondeados */
+            display: inline-block; /* Para que el borde se ajuste al contenido */
+            background-color: #ff9900;
+          }
+          
+          /* Estilo adicional para resaltar el precio */
+          .precio-producto.destacado {
+            background-color: #f8f8f8; /* Fondo gris claro */
+            color: #ff9900; /* Color de texto naranja para destacar */
+          }
+    }
+
+  
+
+    
+}
