@@ -5,8 +5,15 @@
     box-sizing: border-box;
 }
 
+
+
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 767px) {
+
+    header{
+        background-color: rgb(208, 208, 208);
+    }
+    
 
     .fondo div img{
         width: 100%;
@@ -68,6 +75,11 @@
 
 /* Estilos para tabletas */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+
+    header{
+        background-color: rgb(205, 205, 205);
+    }
 
     .fondo div img{
         width: 100%;
@@ -131,7 +143,21 @@
 /* Estilos para computadoras */
 @media screen and (min-width: 1024px) {
 
-    
+    header div img {
+        width: 3%;
+    }
+
+    header{
+        display: flex;
+        background-color: rgb(187, 187, 187);
+        justify-content:space-between;
+        text-decoration: none;
+        list-style: none;
+        
+        padding-right: 2 %;
+
+
+    }
 
     .fondo div img{
         width: 100%;
@@ -177,20 +203,145 @@
         
             font-size: 16px; /* Tamaño de fuente */
             font-weight: bold; /* Negrita */
-            color: #333; /* Color del texto */
+            color: #ffffff; /* Color del texto */
             padding: 5px 10px; /* Espaciado interno */
             border: 2px solid #ccc; /* Borde sólido de 2px de grosor y color gris claro */
             border-radius: 5px; /* Bordes redondeados */
             display: inline-block; /* Para que el borde se ajuste al contenido */
-            background-color: #ff9900;
+            background-color: #171616;
           }
           
           /* Estilo adicional para resaltar el precio */
           .precio-producto.destacado {
             background-color: #f8f8f8; /* Fondo gris claro */
-            color: #ff9900; /* Color de texto naranja para destacar */
+            color: #000000; /* Color de texto naranja para destacar */
           }
-    }
+
+          .carro img{
+            width: 40px;
+          }
+
+          .icon-cart{
+            width: 40px;
+            height: 40px;
+            stroke: #000;
+        }
+        
+        .icon-cart:hover{
+            cursor: pointer;
+        }
+        
+        img{
+            max-width: 100%;
+        }
+        
+        /* Header */
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0 40px 0;
+        }
+        
+        .container-icon{
+            position: relative;
+        }
+        
+        .count-products{
+            position: absolute;
+            top: 55%;
+            right: 0;
+        
+            background-color: #000;
+            color: #fff;
+            width: 25px;
+            height: 25px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        
+        #contador-productos{
+            font-size: 12px;
+        }
+        
+        .container-cart-products{
+            position: absolute;
+            top: 50px;
+            right: 0;
+        
+            background-color: #fff;
+            width: 400px;
+            z-index: 1;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+            border-radius: 10px;
+            
+        }
+        
+        .cart-product{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        
+            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+        
+        }
+        
+        .info-cart-product{
+            display: flex;
+            justify-content: space-between;
+            flex: 0.8;
+        }
+        
+        .titulo-producto-carrito{
+            font-size: 20px;
+        }
+        
+        .precio-producto-carrito{
+            font-weight: 700;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        
+        .cantidad-producto-carrito{
+            font-weight: 400;
+            font-size: 20px;
+        }
+        
+        .icon-close{
+            width: 25px;
+            height: 25px;
+        }
+        
+        .icon-close:hover{
+            stroke: red;
+            cursor: pointer;
+        }
+        
+        .cart-total{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            gap: 20px;
+        }
+        
+        .cart-total h3{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .total-pagar{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        
+        .hidden-cart{
+            display: none;
+        }
+    
 
   
 
